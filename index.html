@@ -11,9 +11,20 @@
 <body>
     <h1>web site 試しに作ってみた</h1>
     <p>できた</p>
-    <p>\begin{align*}
+    <p>  問題文：
+  $z=f(x,y)$に$x=s\cos\theta-t\sin\theta,\ y=s\sin\theta+t\cos\theta$ (ただし、$s$、$t$は定数とする) を代入した関数$z=f(s\cos\theta-t\sin\theta, s\sin\theta+t\cos\theta)$を$F(\theta)$とおく。$F'(0)$を求めよ。答えに偏微分記号が現れる場合、$\frac{\partial f}{\partial x}(\cdot,\cdot)$などの$\cdot$の部分にどのような文字が入るか、明示すること。\\
+  答え
+  \begin{align*}
+  F(\theta) &= f(s\cos\theta - t\sin\theta, s\sin\theta + t\cos\theta) \\
+\end{align*}
+連鎖則より
+\begin{align*}
   \dfrac{\partial F}{\partial \theta} &= \dfrac{\partial f}{\partial x} \dfrac{\partial x}{\partial \theta} + \dfrac{\partial f}{\partial y} \dfrac{\partial y}{\partial \theta} \\
    \dfrac{\partial x}{\partial \theta} &= -s\sin\theta - t\cos\theta,\quad \dfrac{\partial y}{\partial \theta} = s\cos\theta - t\sin\theta \\
-   \end{align*}</p>
+   \end{align*}
+  よって
+   \begin{align*}
+   F'(0) &= -t\dfrac{\partial f}{\partial x}(x,y) + s\dfrac{\partial f}{\partial y}(x,y)
+  \end{align*}</p>
 </body>
 </html>

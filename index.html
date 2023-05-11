@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" href="web test.css">
+    <title>web site テスト</title>
+</head>
+<body>
+    <h1>web site 試しに作ってみた</h1>
+    <p>できた</p>
+    
+    <p>問題文：
+        </p>
+        <p>
+        \begin{align}
+          &z=f(x,y)\text{に}x=s\cos\theta-t\sin\theta,\ y=\sin\theta+t\cos\theta \text{(ただし、}s,t\text{は定数とする) を代入した関数}\\
+          &z=f(s\cos\theta-t\sin\theta, s\sin\theta+t\cos\theta)\text{を}F(\theta)\text{とおく。}F'(0)\text{を求めよ。}\\
+
+            &\text{答えに偏微分記号が現れる場合、}\frac{\partial f}{\partial x}(\cdot,\cdot)\text{などの}
+          \cdot\text{の部分にどのような文字が入るか、明示すること。}
+        \end{align}</p>
+          
+        <div class="italic">
+            <p>  答え:F(θ)について
+            </p>
+            </div>
+        <p>
+        \begin{align*}
+          F(\theta) &= f(s\cos\theta - t\sin\theta, s\sin\theta + t\cos\theta) \\
+        \end{align*}
+        </p>
+        <div class="italic">
+        <p>
+        連鎖則より∂F/∂θは
+        </p>
+    </div>
+        <p>
+        \begin{align*}
+          \dfrac{\partial F}{\partial \theta} &= \dfrac{\partial f}{\partial x} \dfrac{\partial x}{\partial \theta} + \dfrac{\partial f}{\partial y} \dfrac{\partial y}{\partial \theta} \\
+           \dfrac{\partial x}{\partial \theta} &= -s\sin\theta - t\cos\theta,\quad \dfrac{\partial y}{\partial \theta} = s\cos\theta - t\sin\theta \\
+           \end{align*}
+          よって
+           \begin{align*}
+           F'(0) &= -t\dfrac{\partial f}{\partial x}(x,y) + s\dfrac{\partial f}{\partial y}(x,y)
+          \end{align*}</p>
+   <a href="https://pluto0819.github.io/template.html">つづき</a>
+</body>
+</html>
